@@ -2,11 +2,13 @@ package com.clinica.trabalhoclinica;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
 
 @Controller
 public class HomeController {
 
-    @GetMapping("/")
+    @GetMapping("/home")
     public String home() {
         return "index"; // Nome do arquivo HTML para a página inicial (index.html)
     }
@@ -15,4 +17,10 @@ public class HomeController {
     public String login() {
         return "login-register"; // Nome do arquivo HTML para a página de login (login-register.html)
     }
+
+    @GetMapping("/agendamento")
+    public String agendamento() {
+        return "agendarConsulta"; // Nome do arquivo HTML para pagina de agendamento (agendarConsulta.html)
+    }
+    
 }
