@@ -15,12 +15,17 @@ public class HomeController {
 
     @GetMapping("/login")
     public String login() {
-        return "login-register"; // Nome do arquivo HTML para a página de login (login-register.html)
+        return "login-register"; // (login-register.html)
     }
 
     @GetMapping("/agendamento")
     public String agendamento() {
-        return "agendarConsulta"; // Nome do arquivo HTML para pagina de agendamento (agendarConsulta.html)
+        return "agendarConsulta"; // (agendarConsulta.html)
+    }
+    
+    @GetMapping("/agenda")
+    public String agenda() {
+        return "meusAgendamentos"; // (meusAgendamentos.html)
     }
     
 }
