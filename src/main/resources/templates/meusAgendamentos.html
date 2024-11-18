@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Agendamentos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #333;
+            padding: 10px;
+        }
+        .nav-bar a {
+            color: white;
+            margin-right: 15px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #333;
+            color: white;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <a th:href="@{/home}">Home</a>
+            <a th:href="@{/agendamento}">Agendar Consulta</a>
+            <a th:href="@{/agenda}">Meus Agendamentos</a>
+            <a th:href="@{/login}">Login</a>
+        </nav>
+    </header>
+    
+    <h1>Meus Agendamentos</h1>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Data</th>
+                <th>Horário</th>
+                <th>Especialidade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Iterar sobre os agendamentos -->
+            <tr th:each="agendamento : ${agendamentos}">
+                <td th:text="${agendamento.data}"></td>
+                <td th:text="${agendamento.horario}"></td>
+                <td th:text="${agendamento.especialidade}"></td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <footer>
+        <p>&copy; Trabalho feito por Adilson, Alexandre e Gabriel</p>
+    </footer>
+</body>
+</html>
