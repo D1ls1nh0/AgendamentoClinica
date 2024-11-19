@@ -31,7 +31,7 @@
 }
 
 .balloon-main{
-    border: 10px solid #ccc;
+    border: 10px solid none;
     border-radius: 10px;
     padding: 5px;
     margin: 5px;
