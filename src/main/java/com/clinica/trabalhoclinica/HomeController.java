@@ -12,11 +12,6 @@ public class HomeController {
         return "index"; // Nome do arquivo HTML para a página inicial (index.html)
     }
 
-    @GetMapping("/login")
-    public String login() {
-        return "login-register"; // (login-register.html)
-    }
-
     @GetMapping("/agendamento")
     public String agendamento() {
         return "agendarConsulta"; // (agendarConsulta.html)
