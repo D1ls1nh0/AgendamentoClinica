@@ -16,24 +16,27 @@
         </nav>
     </header>
     
-    <h1>Meus Agendamentos</h1>
-    
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Data</th>
-                <th>Horário</th>
-                <th>Especialidade</th>
-            </tr>
-        </thead>
-        <tbody id="agendamentos-tbody">
-            <!-- Conteúdo será preenchido pelo JavaScript -->
-        </tbody>
-    </table>
+    <div class="meus-agendamentos">
+        <h1>Meus Agendamentos</h1>
+        
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Data</th>
+                    <th>Horário</th>
+                    <th>Especialidade</th>
+                </tr>
+            </thead>
+            <tbody id="agendamentos-tbody">
+                <!-- Conteúdo será preenchido pelo JavaScript -->
+            </tbody>
+        </table>
+    </div>
     
     <footer>
         <p>&copy; Trabalho feito por Adilson, Alexandre e Gabriel</p>
     </footer>
+    
     <script th:src="@{/agenda/scriptAgenda.js}"></script>
 </body>
 </html>
