@@ -48,7 +48,7 @@
     padding: 20px;
     width: 100%;
     max-width: 500px;
-    margin: 20px auto;
+    margin: 196px auto;
     font-family: 'Arial', sans-serif;
 }
 
@@ -124,6 +124,11 @@
 
 
 /* Cabeçalho da página */
+.meus-agendamentos {
+    margin-top: 50px;
+    margin-bottom: 300px;
+}
+
 .meus-agendamentos h1 {
     text-align: center;
     margin-top: 20px;
