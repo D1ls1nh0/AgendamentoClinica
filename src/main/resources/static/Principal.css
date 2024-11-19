@@ -2,22 +2,20 @@
     background-color: black;
     color: white;
     text-decoration: none;
-    text-align: center;
-    padding: 2px;
+    padding: 10px;
+}
+
+.nav-bar {
     display: flex;
-    text-align: center;
     align-items: center;
     justify-content: center;
-    display: flex;
 }
 
 .nav-link:hover, .nav-link.active {
     border-radius: 5px;
     padding: 5px;
-    margin: 5px;
     color: white;
     background-color: #0c6600;
-    display: inline-block;
 }
 
 .balloon{
@@ -39,4 +37,146 @@
     display: inline-block;
     font-size: medium;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Estilo específico para a seção de agendamento */
+.main-section {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+    margin: 196px auto;
+    font-family: 'Arial', sans-serif;
+}
+
+
+.main-section h1,
+.main-section h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.main-section input[type="date"],
+.main-section select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: inherit;
+}
+
+.main-section button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.main-section button:hover {
+    background-color: #0056b3;
+}
+
+.main-section #horarios-disponiveis {
+    margin-top: 20px;
+}
+
+.main-section .horario-button {
+    padding: 10px 15px;
+    margin: 5px;
+    font-size: 14px;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    color: black;
+}
+
+.main-section .horario-button:hover {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+.main-section .horario-button.selected {
+    background-color: #28a745;
+    color: #ffffff;
+    border-color: #28a745;
+}
+
+.main-section .horario-button.disabled {
+    background-color: #ddd;
+    color: #aaa;
+    border-color: #ccc;
+    cursor: not-allowed;
+}
+
+
+
+/* Cabeçalho da página */
+.meus-agendamentos {
+    margin-top: 50px;
+    margin-bottom: 300px;
+}
+
+.meus-agendamentos h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2rem;
+    color: #0056b3;
+}
+
+/* Estilo da tabela */
+.meus-agendamentos .table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.meus-agendamentos .table th,
+.meus-agendamentos .table td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.meus-agendamentos .table th {
+    background-color: #007bff;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.meus-agendamentos .table td {
+    background-color: #f8f9fa;
+    border-top: 1px solid #ddd;
+}
+
+.meus-agendamentos .table tr:nth-child(even) td {
+    background-color: #e9ecef;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #343a40;
+    color: #ffffff;
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+footer p {
+    margin: 0;
 }
